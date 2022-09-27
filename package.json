@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "api": "nodemon src/index.js", 
+    "prisma":"npx prisma studio"
   },
   "repository": {
     "type": "git",
@@ -18,7 +21,13 @@
   },
   "homepage": "https://github.com/symphony-annaLlorens/hackernews-node#readme",
   "dependencies": {
-    "apollo-server": "^2.26.0",
-    "graphql": "^14.7.0"
+    "@prisma/client": "^4.3.1",
+    "apollo-server": "^3.10.2",
+    "graphql": "^16.6.0",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.23",
+    "prisma": "^4.3.1"
   }
 }
